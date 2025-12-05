@@ -6,6 +6,7 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 nltk.download('punkt', quiet=True)
 nltk.download('stopwords', quiet=True)
+nltk.download('punkt_tab', quiet=True)
 
 ps = PorterStemmer()
 
@@ -55,3 +56,4 @@ if st.button('Predict'):
     else:
 
         st.header("Not Spam")
+
